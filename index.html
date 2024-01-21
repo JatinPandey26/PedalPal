@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/navbar.style.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+ </head>
+ <body>
+  <nav id="navbar">
+   <span>PedalPal</span>
+   <ul class="logged-out-nav-options">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="register.php">Register</a></li>
+   </ul>
+   <ul class="logged-in-nav-options">
+    <li><a class="logout-button" href="logout.html">Logout</a></li>
+    <li>
+     <a href="profile.html"
+      ><div class="user-img-navbar">
+       <img src="./assets/images/userProfile.png" alt="" /></div
+     ></a>
+    </li>
+   </ul>
+  </nav>
+
+  <section id="home-container">
+   <div class="left">
+    <h1>Find Ride</h1>
+    <form action="">
+     <div class="input-container">
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" />
+     </div>
+     <div class="input-container">
+      <label for="time">Start Time</label>
+      <input type="time" name="time" id="time" />
+     </div>
+     <div class="input-container">
+      <label for="time">End Time</label>
+      <input type="time" name="time" id="time" />
+     </div>
+     <div class="input-container">
+      <label for="location">Location</label>
+      <input type="text" name="location" id="location" />
+     </div>
+     <button type="submit">Search</button>
+    </form>
+   </div>
+   <div class="right">
+    <img src="./assets/images/motorcycle_logo.png" alt="" />
+   </div>
+  </section>
+
+  <script src="./scripts/navbar.js"></script>
+ </body>
+</html>

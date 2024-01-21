@@ -1,0 +1,73 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+#navbar {
+ background-color: #e9f4f8;
+ padding: 1rem;
+ text-align: center;
+ display: flex;
+ width: 100%;
+ height: 10vh;
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ overflow: hidden;
+ align-items: center;
+}
+
+#navbar::-webkit-scrollbar {
+ display: none;
+}
+
+#navbar > span {
+ width: 20%;
+ display: flex;
+ justify-content: flex-start;
+ font-size: 2rem;
+ font-weight: 600;
+}
+
+#navbar .logged-out-nav-options {
+ display: flex;
+ width: 80%;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 1rem;
+ list-style: none;
+}
+
+#navbar .logged-in-nav-options {
+ display: flex;
+ width: 80%;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 1rem;
+ list-style: none;
+}
+
+#navbar .logged-out-nav-options > li > a {
+ font-size: 1rem;
+ font-weight: 600;
+ border: 1px solid #292828;
+ padding: 0.5rem;
+ border-radius: 5px;
+}
+
+.user-img-navbar {
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+}
+
+.user-img-navbar > img {
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+ object-fit: cover;
+}
